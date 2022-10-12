@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 const client = new Discord.Client({intents: 32767})
 
-client.login('MTAyMzI1MDAzNzMxNDE1ODY5Mw.Gn2UEo.nQ17Aj0lF6knR-8iGDbcfdIkIBGnN5Ft6wiJ9s');
+client.login('MTAyMzI1MDAzNzMxNDE1ODY5Mw.GKpq9b.OBmx3wkdfhjEi0RWxYjFsxVAyuNC0CRuwFN6Wk');
 
 client.on('ready', readyDiscord);
 function readyDiscord () {
@@ -51,4 +51,4 @@ client.on('presenceUpdate', (oldMember, newMember) => {
     }
 });
 } 
-client.login('MTAyMzI1MDAzNzMxNDE1ODY5Mw.Gn2UEo.nQ17Aj0lF6knR-8iGDbcfdIkIBGnN5Ft6wiJ9s');
+client.login('MTAyMzI1MDAzNzMxNDE1ODY5Mw.GKpq9b.OBmx3wkdfhjEi0RWxYjFsxVAyuNC0CRuwFN6Wk');
