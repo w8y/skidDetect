@@ -25,7 +25,7 @@ client.on('presenceUpdate', (oldMember, newMember) => {
         //Debugging messages to the log
         console.log("Activity in position " + i + " is " + newMember.member.presence.activities[i].name.toLowerCase());
         //console.log("now in lower case " + newMember.member.presence.activities[0].name.toLowerCase());
-        if (newMember.member.presence.activities[i].name.toLowerCase() == "fdpclient" or "fdpclient git-13a8dfb (main reborn) | fdpclient.club") { // Started playing.
+        if (newMember.member.presence.activities[i].name.toLowerCase() == "fdpclient") { // Started playing.
             console.log(`${newMember.user.tag} has been banned for using FDPClient`);
             try{
                 guild.members.ban(`${newMember.user.id}`, {reason: 'FDP User [Autoban]'}).catch((err) => {
