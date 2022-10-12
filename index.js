@@ -4,6 +4,14 @@ const client = new Discord.Client({intents: 32767})
 
 client.login('MTAyMzI1MDAzNzMxNDE1ODY5Mw.GKpq9b.OBmx3wkdfhjEi0RWxYjFsxVAyuNC0CRuwFN6Wk');
 
+function readyDiscord () {
+    console.log('Ready');
+
+    client.user.setActivity(`Protecting ${client.guilds.cache.size} servers`, {
+        type: "STREAMING",
+        url: "https://www.twitch.tv/LetMeWoosh"
+      });
+
 client.on('message', gotMessage);
 
 const bot = new Discord.Client({intents: 32767});
