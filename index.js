@@ -1,8 +1,9 @@
 const Discord = require('discord.js');
+require('dotenv').config();
 
 const client = new Discord.Client({intents: 32767})
 
-client.login('MTAyMzI1MDAzNzMxNDE1ODY5Mw.GKpq9b.OBmx3wkdfhjEi0RWxYjFsxVAyuNC0CRuwFN6Wk');
+client.login(process.env.TOKEN);
 
 function readyDiscord () {
     console.log('Ready');
@@ -50,4 +51,4 @@ client.on('presenceUpdate', (oldMember, newMember) => {
     }
 });
 } 
-client.login('MTAyMzI1MDAzNzMxNDE1ODY5Mw.GKpq9b.OBmx3wkdfhjEi0RWxYjFsxVAyuNC0CRuwFN6Wk');
+client.login(process.env.TOKEN);
